@@ -1,5 +1,6 @@
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
 [![Is the package on CRAN?](http://www.r-pkg.org/badges/version/rebus.base)](http://www.r-pkg.org/pkg/rebus.base)
+[![Build Status](https://semaphoreci.com/api/v1/projects/247c4ca2-6390-4337-a700-67f38bec6616/635308/badge.svg)](https://semaphoreci.com/richierocks/rebus-numbers)
 
 # rebus.numbers: Regular Expression Builder, Um, Something (Number-Related Functionality)
 
@@ -35,4 +36,7 @@ install_github("richierocks/rebus.numbers")
 
 ## Package contents
 
-TODO
+`number_range` creates a regex that matches a range of integers.  For example, `number_range(-12, 123)` generates `(?:-(?:[1-9]|1[0-2])|(?:0[0-9]{2}|1[0-1][0-9]|12[0-3]))`.
+
+`roman` generates a regex to match roman numerals, and `ROMAN` provides the constant form.  For example `roman(2, 3)` matches two or three roman numbers.
+
