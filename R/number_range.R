@@ -112,8 +112,9 @@ get_alternate_ranges <- function(d, allow_leading_zeroes)
       },
       if(nrow(middle) > 0)
       {
-        m <- if(middle[1, 1] == "") "0" else middle[1, 1]
-        char_range(m, middle[nrow(middle), 1]) %R%
+        m1 <- if(middle[1, 1] == "") "0" else middle[1, 1]
+        m2 <- if(middle[nrow(middle), 1] == "") "0" else middle[nrow(middle), 1]
+        suppressWarnings(char_range(m1, m2)) %R%
           ascii_digit(ncol(d) - 1, ncol(d) - 1)
       } else
       {
