@@ -6,8 +6,9 @@ Author: Richard Cotton [aut, cre]
 Maintainer: Richard Cotton <richierocks@gmail.com>
 Authors@R: person("Richard", "Cotton", role = c("aut", "cre"), email =
     "richierocks@gmail.com")
-Description: Class groups of number ranges for building regular expressions
-    with the "rebus" package.
+Description:Build regular expressions piece by piece using human readable code.
+    This package contains number-related functionality, and is primarily intended
+    to be used by package developers.
 Depends:
     R (>= 3.1.0)
 Imports:
