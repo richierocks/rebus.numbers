@@ -2,7 +2,7 @@
 % Please edit documentation in R/number_range.R
 \name{number_range}
 \alias{number_range}
-\title{Generate a regular expression for a number range.}
+\title{Generate a regular expression for a number range}
 \usage{
 number_range(lo, hi, allow_leading_zeroes = FALSE, capture = FALSE)
 }

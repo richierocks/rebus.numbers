@@ -1,7 +1,7 @@
 #' @include imports.R
 NULL
 
-#' Generate a regular expression for a number range.
+#' Generate a regular expression for a number range
 #'
 #' Generates a regular expression that matches a sequence of numbers.
 #' @param lo An integer.
