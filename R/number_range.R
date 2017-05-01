@@ -68,7 +68,14 @@ get_alternate_ranges <- function(d, allow_leading_zeroes)
   }
   if(ncol(d) == 1)
   {
-    return(char_range(d[1, 1], d[nrow(d), 1]))
+    nrow_d <- nrow(d)
+    if(nrow_d == 1)
+    {
+      return(d[1, 1])
+    } else
+    {
+      return(char_range(d[1, 1], d[nrow_d, 1]))
+    }
   }
   if(max(d[, 1]) == min(d[, 1]))
   {
